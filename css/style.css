@@ -1,0 +1,530 @@
+/* ========== FUENTES Y RESETEO GLOBAL ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ========== VARIABLES DE COLOR ========== */
+:root {
+    --azul-oscuro: #1C2A4A;
+    --amarillo: #FFD54F;
+    --rojo: #E53935;
+    --blanco: #ffffff;
+    --gris-claro: #f0f0f0;
+    --sombra: rgba(0, 0, 0, 0.1);
+}
+
+/* ========== HEADER ========== */
+header {
+    background-color: var(--azul-oscuro);
+    color: var(--blanco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px var(--sombra);
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+header .logo span {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: var(--amarillo);
+    color: var(--azul-oscuro);
+}
+
+/* ========== HERO ========== */
+.hero {
+    background: linear-gradient(to right, var(--azul-oscuro), #243B64);
+    color: var(--blanco);
+    text-align: center;
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30%;
+    width: 160%;
+    height: 100%;
+    background: url('../img/hero-pattern.svg') repeat;
+    opacity: 0.05;
+    z-index: 0;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.25em;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: var(--amarillo);
+    color: var(--azul-oscuro);
+    padding: 14px 28px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn:hover {
+    background-color: var(--rojo);
+    color: var(--blanco);
+    transform: scale(1.05);
+}
+
+/* ========== PRODUCTOS ========== */
+.productos {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.productos h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: var(--azul-oscuro);
+    position: relative;
+    display: inline-block;
+}
+
+.productos h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--amarillo);
+    margin: 10px auto 0;
+    border-radius: 4px;
+}
+
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    background-color: var(--blanco);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 15px 0;
+    font-size: 1.2em;
+    color: var(--azul-oscuro);
+}
+
+/* ========== PROMOCIONES ========== */
+.promociones {
+    background-color: var(--rojo);
+    color: var(--blanco);
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.promociones h2 {
+    font-size: 2.3em;
+    margin-bottom: 20px;
+}
+
+.promociones p {
+    font-size: 1.1em;
+    margin-bottom: 25px;
+}
+
+#contador {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+    .productos h2 {
+        font-size: 2em;
+    }
+
+    .card h3 {
+        font-size: 1em;
+    }
+
+    .promociones h2 {
+        font-size: 1.8em;
+    }
+
+    #contador {
+        font-size: 1.5em;
+    }
+}
+
+/* ========== TESTIMONIOS ========== */
+.testimonios {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.grid-testimonios {
+    display: grid;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.testimonio {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-left: 5px solid var(--amarillo);
+    font-style: italic;
+    border-radius: 6px;
+}
+
+/* ========== FAQ ========== */
+.faq {
+    background-color: #fafafa;
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq details {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.faq summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ========== CONTACTO ========== */
+.contacto {
+    background-color: #f9f9f9; /* Fondo gris muy claro */
+    padding: 60px 20px;
+    text-align: center;
+    color: #222; /* Texto oscuro */
+}
+
+.contacto h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #1C2A4A; 
+}
+
+.contacto p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.info-contacto {
+    margin-bottom: 30px;
+}
+
+.info-contacto p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.info-contacto a {
+    color: #1C2A4A;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.info-contacto a:hover {
+    color: #1C2A4A; /* Fucsia más oscuro al pasar el mouse */
+}
+
+/* Botón de WhatsApp dentro de sección */
+.btn.whatsapp {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #25D366;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn.whatsapp:hover {
+    background-color: #1aac4c;
+    transform: scale(1.05);
+}
+
+/* ========== BOTÓN FLOTANTE DE WHATSAPP ========== */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    z-index: 1000;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: pulse 2.5s infinite;
+}
+
+/* Accesibilidad: lector de pantalla */
+.whatsapp-float span {
+    display: inline-block;
+    position: absolute;
+    left: -9999px;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    background-color: #1aac4c;
+}
+
+/* Animación de pulso */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contacto h2 {
+        font-size: 2em;
+    }
+
+    .contacto p,
+    .info-contacto p {
+        font-size: 1em;
+    }
+
+    .btn.whatsapp {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+.ubicacion {
+    background-color: var(--gris-claro);
+    padding: 60px 20px;
+    text-align: center;
+    color: var(--azul-oscuro);
+}
+
+.ubicacion h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: var(--azul-oscuro);
+}
+
+.ubicacion p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+
+
+/* ========== FOOTER ========== */
+footer {
+    background-color: var(--azul-oscuro);
+    color: var(--blanco);
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 0.95em;
+    line-height: 1.6;
+    border-top: 3px solid var(--rosa); /* opcional: para dar un toque decorativo */
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2);
+}
+
+footer a {
+    color: var(--blanco);
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--rosa);
+    text-decoration: none;
+}
+
+footer .footer-info {
+    margin-bottom: 10px;
+    opacity: 0.9;
+}
+
+footer .footer-copy {
+    font-size: 0.85em;
+    opacity: 0.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    footer {
+        font-size: 0.85em;
+        padding: 20px 15px;
+    }
+}
+
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h2 {
+        font-size: 1.8em;
+        margin-bottom: 10px;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .grid-productos {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-testimonios {
+        grid-template-columns: 1fr;
+    }
+
+    .contacto form {
+        padding: 0 10px;
+    }
+
+    .faq {
+        padding: 40px 15px;
+    }
+
+    .promociones h2,
+    .productos h2,
+    .testimonios h2,
+    .faq h2,
+    .contacto h2 {
+        font-size: 1.5em;
+    }
+
+    .btn {
+        font-size: 0.95em;
+        padding: 10px 16px;
+    }
+}

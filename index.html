@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petunia - Regalos para cada ocasión</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Petuna: regalos únicos para cualquier ocasión especial. Descubre nuestros productos de temporada y promociones exclusivas.">
+    <meta name="author" content="Petuniaaa">
+    <meta name="keywords" content="regalos, cumpleaños, navidad, petunia, detalles, promociones, tienda, regalos personalizados">
+
+    <!-- ICONO -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            font-size: 30px;
+            text-align: center;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            background-color: #1ebe5d;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo" aria-label="Logotipo de Petunia">
+            <img src="img/logo.png" alt="Logo de Petunia, tienda de regalos" loading="lazy">
+            <h1>Petunia - Detalles que enamoran</h1>
+        </div>
+        <nav aria-label="Menú principal">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#promociones">Promociones</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- CONTENIDO PRINCIPAL -->
+<main>
+<!-- HERO -->
+<section id="inicio" class="hero" aria-label="Sección de bienvenida">
+    <div class="hero-text">
+        <h1>Petunia - Detalles que cuentan historias</h1>
+        <h2>Cada regalo, un recuerdo imborrable</h2>
+        <p>Transformamos momentos cotidianos en experiencias inolvidables. Encuentra ese detalle que dice más que mil palabras.</p>
+        <a href="#productos" class="btn" aria-label="Explorar catálogo de productos">Descubre nuestros regalos</a>
+    </div>
+</section>
+
+
+
+
+        <!-- PRODUCTOS -->
+        <section id="productos" class="productos">
+            <h2>Nuestros Productos</h2>
+            <div class="grid-productos">
+                <article class="card">
+                    <img src="img/productos/navidad.jpg" alt="Caja de regalo navideña con moño rojo" loading="lazy">
+                    <h3>Navidad</h3>
+                    <p>Desde <strong>$35.000</strong></p>
+                </article>
+                <article class="card">
+                    <img src="img/productos/madres.jpg" alt="Regalo para el Día de la Madre con flores" loading="lazy">
+                    <h3>Día de la Madre</h3>
+                    <p>Desde <strong>$40.000</strong></p>
+                </article>
+                <article class="card">
+                    <img src="img/productos/padres.jpg" alt="Caja de regalo para el Día del Padre con corbata" loading="lazy">
+                    <h3>Día del Padre</h3>
+                    <p>Desde <strong>$38.000</strong></p>
+                </article>
+                <article class="card">
+                    <img src="img/productos/cumple.jpg" alt="Regalo de cumpleaños con globos y pastel" loading="lazy">
+                    <h3>Cumpleaños</h3>
+                    <p>Desde <strong>$30.000</strong></p>
+                </article>
+            </div>
+        </section>
+
+
+<!-- PROMOCIONES -->
+<section id="promociones" class="promociones">
+    <h2>Promociones Especiales</h2>
+    <p>¡Prepara el regalo perfecto para esta temporada! No te pierdas nuestras ofertas limitadas.</p>
+    <div id="contador" aria-live="polite" class="contador"></div>
+    <a href="#contacto" class="btn" aria-label="Ir a la sección de contacto">Contáctanos</a>
+</section>
+
+<!-- TESTIMONIOS -->
+<section id="testimonios" class="testimonios">
+    <h2>Lo que dicen nuestros clientes</h2>
+    <div class="grid-testimonios">
+        <article class="testimonio">
+            <p>“★★★★★ Muy buen servicio, llegó justo a tiempo y el empaque hermoso.”<br><strong>– María C.</strong></p>
+        </article>
+        <article class="testimonio">
+            <p>“★★★★★ Me encantó el detalle para mi mamá. ¡Gracias Petunia!”<br><strong>– Andrés G.</strong></p>
+        </article>
+    </div>
+</section>
+
+        </section>
+<!-- FAQ -->
+<section id="faq" class="faq">
+    <h2>Preguntas Frecuentes</h2>
+
+    <details>
+        <summary>¿Hacen envíos a todo el país?</summary>
+        <p>Sí, realizamos envíos a nivel nacional con empresas aliadas de confianza.</p>
+    </details>
+
+    <details>
+        <summary>¿Qué métodos de pago aceptan?</summary>
+        <p>Aceptamos transferencias bancarias, Nequi, Daviplata y pagos contra entrega en zonas seleccionadas.</p>
+    </details>
+
+    <details>
+        <summary>¿Cuánto tarda en llegar un pedido?</summary>
+        <p>Los pedidos llegan entre 1 y 3 días hábiles, dependiendo de la ubicación y disponibilidad del producto.</p>
+    </details>
+
+    <details>
+        <summary>¿Puedo personalizar un regalo?</summary>
+        <p>¡Claro! Personalizamos productos con nombres, mensajes o temáticas especiales. Contáctanos para más detalles.</p>
+    </details>
+
+    <details>
+        <summary>¿Tienen tienda física?</summary>
+        <p>Sí, contamos con una tienda física ubicada en Bogotá. Puedes visitarnos para ver nuestros productos en persona, hacer pedidos directamente o recoger tus compras realizadas en línea.</p>
+    </details>
+</section>
+<!-- CONTACTO -->
+<section id="contacto" class="contacto">
+    <h2>¡Hablemos!</h2>
+    <p>¿Tienes preguntas, deseas hacer un pedido personalizado o simplemente saludarnos? Contáctanos por cualquiera de nuestras redes sociales:</p>
+
+    <div class="info-contacto">
+        <p>
+            <strong>📱 WhatsApp:</strong> 
+            <a href="https://wa.me/573004380924" target="_blank" rel="noopener noreferrer" aria-label="Escríbenos por WhatsApp al número 300 438 0924">
+                300 438 0924
+            </a>
+        </p>
+        <p>
+            <strong>🎵 TikTok:</strong> 
+            <a href="https://www.tiktok.com/@petuniatiendaderegalos" target="_blank" rel="noopener noreferrer" aria-label="Visita nuestro perfil de TikTok">
+                @petuniatiendaderegalos
+            </a>
+        </p>
+        <p>
+            <strong>📘 Facebook:</strong> 
+            <a href="https://www.facebook.com/petunia.detalles" target="_blank" rel="noopener noreferrer" aria-label="Visítanos en Facebook">
+                Petunia Detalles
+            </a>
+        </p>
+    </div>
+
+    <a href="https://wa.me/573004380924" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="btn whatsapp" 
+       aria-label="Abrir chat de WhatsApp con Petunia Tienda de Regalos">
+        💬 Escríbenos por WhatsApp
+    </a>
+</section>
+
+
+
+
+
+<!-- UBICACIÓN -->
+<section id="ubicacion" class="ubicacion">
+    <h2>¿Dónde estamos?</h2>
+    <p>Visítanos en nuestra tienda física en <strong>Santandercito, San Antonio del Tequendama, Cundinamarca</strong>. ¡Estaremos encantados de recibirte!</p>
+
+    <div class="mapa">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.065506030798!2d-74.3439793250739!3d4.595449995427441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3fba2fdc04e6f3%3A0x60f144b321d7de37!2sCra.%203%20%234a-43%2C%20San%20Antonio%20Del%20Tequendama%2C%20Cundinamarca!5e0!3m2!1ses!2sco!4v1722359041223!5m2!1ses!2sco"
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" title="Ubicación de Petunia">
+        </iframe>
+    </div>
+</section>
+
+
+
+    </main>
+
+<footer>
+    <div class="footer-info">
+        Tienda física en <strong>Santandercito, Cundinamarca</strong> | Cra. 3 #4a-43, San Antonio del Tequendama<br>
+        Contáctanos: <a href="https://wa.me/573004380924" target="_blank" aria-label="Chatear por WhatsApp con Petunia">+57 300 438 0924</a>
+    </div>
+    <div class="footer-copy">
+        &copy; 2025 <strong>Petunia</strong> - Todos los derechos reservados.
+    </div>
+</footer>
+
+
+
+    <!-- CONTADOR REGRESIVO -->
+    <script>
+        const contador = document.getElementById("contador");
+        const fechaObjetivo = new Date("2025-12-01T00:00:00").getTime();
+
+        setInterval(() => {
+            const ahora = new Date().getTime();
+            const diferencia = fechaObjetivo - ahora;
+
+            if (diferencia <= 0) {
+                contador.innerHTML = "¡La promoción ha comenzado!";
+                return;
+            }
+
+            const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+            const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
+            const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
+
+            contador.innerHTML = `Faltan ${dias}d ${horas}h ${minutos}m ${segundos}s para la próxima promoción`;
+        }, 1000);
+    </script>
+
+</body>
+</html>
