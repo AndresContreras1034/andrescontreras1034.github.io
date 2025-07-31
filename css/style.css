@@ -574,4 +574,31 @@ footer .footer-copy {
         font-size: 0.95em;
         padding: 10px 16px;
     }
+    //Cosas neuvas
+.cta-flotante {
+  position: fixed;
+  bottom: 90px; /* encima del botón de WhatsApp */
+  right: 20px;
+  background-color: #ff4081;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  font-weight: bold;
+  z-index: 9999;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.cta-flotante:hover {
+  transform: scale(1.05);
+  background-color: #e73370;
+}
+.whatsapp-fijo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9998;
+}
+
 }
