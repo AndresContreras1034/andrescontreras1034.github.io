@@ -107,5 +107,20 @@ graph TD
     R --> M
     S --> O
 ```
+---
+
+## 👨‍💻 Autor
+
+- **Andrés Contreras** – Desarrollador principal  
+  GitHub: [@andresdevgithub](https://github.com/andresdevgithub)  
+  Proyecto personal desarrollado como parte de su portafolio profesional.
+
+---
+
+## 📄 Licencia
+
+Este proyecto está licenciado bajo los términos de la licencia MIT.  
+Consulta el archivo [LICENSE](LICENSE) para más detalles.
+
 
 
