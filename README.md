@@ -112,7 +112,7 @@ graph TD
 ##  Autor
 
 - **Andrés Contreras** – Desarrollador principal  
-  GitHub: [@andresdevgithub](https://github.com/andresdevgithub)  
+  GitHub: [@AndresContreras1034](https://github.com/AndresContreras1034)  
   Proyecto personal desarrollado como parte de su portafolio profesional.
 
 ---
