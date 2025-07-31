@@ -12,7 +12,7 @@
 - CSS3 (con diseño responsive)
 - JavaScript vanilla (en proceso)
 - Google Fonts
-- Hosting: GitHub Pages / Vercel / Netlify
+- Hosting: GitHub Pages
 - Dominio personalizado `.me`
 
 ---
@@ -78,36 +78,34 @@ xdg-open index.html   # Linux
 - Base de datos con MongoDB o PostgreSQL
 - Funcionalidades dinámicas con JavaScript
 
-  ```mermaid
-classDiagram
-    class SitioWeb {
-        +index.html
-        +about.html
-        +contact.html
-        +services.html
-        +login.html
-        +register.html
-        +panel.html
-    }
 
-    class CSS {
-        +style.css
-    }
+```mermaid
+graph TD
+    A["Usuario - navegador"] --> B["DNS: petuniatienda.me"]
+    B --> C["IP del servidor web"]
+    C --> D["Petición HTTPS a /index.html"]
 
-    class Img {
-        +logo.png
-        +otros recursos...
-    }
+    D --> E["Servidor Web (Hosting)"]
+    E --> F["index.html"]
+    F --> G["style.css"]
+    F --> H["logo.png y otros recursos - img/"]
+    F --> I["JS, fuentes, iconos..."]
 
-    class Usuario {
-        <<HTML>>
-        +registrarse()
-        +iniciarSesion()
-        +verPanel()
-    }
+    F --> J["about.html"]
+    F --> K["contact.html"]
+    F --> L["services.html"]
+    F --> M["login.html"]
+    F --> N["register.html"]
+    F --> O["panel.html"]
 
-    SitioWeb --> CSS
-    SitioWeb --> Img
-    SitioWeb --> Usuario
+    A --> P["Interacciones de Usuario"]
+    P --> Q["Registrarse"]
+    P --> R["Iniciar sesión"]
+    P --> S["Ver panel"]
+
+    Q --> N
+    R --> M
+    S --> O
 ```
+
 
