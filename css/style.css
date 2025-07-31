@@ -385,93 +385,99 @@ header nav {
     transform: scale(1.05);
 }
 
-/* ========== BOTÓN FLOTANTE DE WHATSAPP ========== */
-.whatsapp-float {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #25D366;
-    color: white;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    font-size: 28px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    z-index: 1000;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    animation: pulse 2.5s infinite;
+/* ========= BOTÓN FLOTANTE: ¡Revisa promociones! ========= */
+.cta-flotante {
+  position: fixed;
+  bottom: 90px; /* justo encima del botón de WhatsApp */
+  right: 20px;
+  background-color: #ff4081;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  font-weight: bold;
+  z-index: 9999;
+  transition: transform 0.2s ease, background-color 0.3s ease;
 }
 
-/* Accesibilidad: lector de pantalla */
-.whatsapp-float span {
-    display: inline-block;
-    position: absolute;
-    left: -9999px;
+.cta-flotante:hover {
+  transform: scale(1.05);
+  background-color: #e73370;
+}
+
+/* ========= BOTÓN FLOTANTE: WhatsApp fijo ========= */
+.whatsapp-fijo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9998;
+}
+
+.whatsapp-fijo img {
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+
+/* ========= BOTÓN DE WHATSAPP DENTRO DE UNA SECCIÓN ========= */
+.btn.whatsapp {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #25D366;
+  color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn.whatsapp:hover {
+  background-color: #1aac4c;
+  transform: scale(1.05);
+}
+
+/* ========= BOTÓN CIRCULAR FLOTANTE DE WHATSAPP (opcional extra) ========= */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  z-index: 1000;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: pulse 2.5s infinite;
 }
 
 .whatsapp-float:hover {
-    transform: scale(1.1);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
-    background-color: #1aac4c;
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  background-color: #1aac4c;
 }
 
-/* Animación de pulso */
+/* Solo para lectores de pantalla */
+.whatsapp-float span {
+  display: inline-block;
+  position: absolute;
+  left: -9999px;
+}
+
+/* ========= ANIMACIÓN: PULSO ========= */
 @keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
 }
-
-/* Responsive */
-@media (max-width: 768px) {
-    .contacto h2 {
-        font-size: 2em;
-    }
-
-    .contacto p,
-    .info-contacto p {
-        font-size: 1em;
-    }
-
-    .btn.whatsapp {
-        font-size: 1em;
-        padding: 10px 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    .whatsapp-float {
-        width: 50px;
-        height: 50px;
-        font-size: 22px;
-        bottom: 15px;
-        right: 15px;
-    }
-}
-
-.ubicacion {
-    background-color: var(--gris-claro);
-    padding: 60px 20px;
-    text-align: center;
-    color: var(--azul-oscuro);
-}
-
-.ubicacion h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: var(--azul-oscuro);
-}
-
-.ubicacion p {
-    font-size: 1.1em;
-    margin-bottom: 30px;
-}
-
-
 
 /* ========== FOOTER ========== */
 footer {
