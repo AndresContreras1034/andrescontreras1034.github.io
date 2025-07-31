@@ -183,6 +183,27 @@ header nav {
     color: var(--blanco);
     transform: scale(1.05);
 }
+/* SECCIÓN QUIÉNES SOMOS */
+#quienes-somos {
+  padding: 4rem 2rem;
+  background-color: #fdf9f9; /* Fondo claro suave */
+  text-align: center;
+}
+
+#quienes-somos h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #e91e63; /* Color de acento */
+}
+
+#quienes-somos p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
 
 /* ========== PRODUCTOS ========== */
 .productos {
