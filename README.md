@@ -109,7 +109,7 @@ graph TD
 ```
 ---
 
-## 👨‍💻 Autor
+##  Autor
 
 - **Andrés Contreras** – Desarrollador principal  
   GitHub: [@andresdevgithub](https://github.com/andresdevgithub)  
@@ -117,7 +117,7 @@ graph TD
 
 ---
 
-## 📄 Licencia
+## Licencia
 
 Este proyecto está licenciado bajo los términos de la licencia MIT.  
 Consulta el archivo [LICENSE](LICENSE) para más detalles.
