@@ -1,303 +1,228 @@
 <!DOCTYPE html>
 <html lang="es">
-
-    
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Petunia - Regalos para cada ocasión</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foro Salud Mental</title>
 
-    <!-- SEO -->
-    <meta name="description" content="Petuna: regalos únicos para cualquier ocasión especial. Descubre nuestros productos de temporada y promociones exclusivas.">
-    <meta name="author" content="Petuniaaa">
-    <meta name="keywords" content="regalos, cumpleaños, navidad, petunia, detalles, promociones, tienda, regalos personalizados">
+  <!-- SEO -->
+  <meta name="description" content="Foro de salud mental anónimo: comparte tus experiencias, recibe apoyo y encuentra un espacio seguro para hablar sobre depresión, ansiedad y bienestar emocional.">
+  <meta name="author" content="Equipo Salud Mental">
+  <meta name="keywords" content="foro, salud mental, depresión, ansiedad, bienestar, apoyo emocional, comunidad, anónimo, psicología">
 
-    <!-- ICONO -->
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <!-- ICONO -->
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
-    <!-- FUENTES -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- FUENTES -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-    <!-- ESTILOS -->
-<link rel="stylesheet" href="css/style.css">
-<script src="js/main.js"></script>
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
+  <!-- ESTILOS -->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js"></script>
 
-        .whatsapp-float {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            width: 60px;
-            height: 60px;
-            background-color: #25D366;
-            color: white;
-            border-radius: 50%;
-            font-size: 30px;
-            text-align: center;
-            z-index: 1000;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-        }
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
 
-        .whatsapp-float:hover {
-            background-color: #1ebe5d;
-        }
-    </style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 60px;
+      height: 60px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      font-size: 30px;
+      text-align: center;
+      z-index: 1000;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
 
-  gtag('config', 'G-QSP3ZT77VM');
-</script>
+    .whatsapp-float:hover {
+      background-color: #1ebe5d;
+    }
+  </style>
 
-
-
-
-  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-QSP3ZT77VM');
+  </script>
 </head>
+
 <body>
+  <!-- HEADER -->
+  <header>
+    <div class="logo" aria-label="Logotipo de la plataforma de salud mental">
+      <img src="img/logo.png" alt="Logo de la plataforma de salud mental" loading="lazy">
+      <h1>Foro Salud Mental</h1>
+    </div>
 
-<!-- HEADER -->
-<header>
-  <div class="logo" aria-label="Logotipo de Petunia">
-    <img src="img/logo.png" alt="Logo de Petunia, tienda de regalos" loading="lazy">
-    <h1>Petunia</h1>
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+    <!-- NAV: Menú principal del foro -->
+    <nav aria-label="Menú principal">
+      <ul class="menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#objetivo">Objetivo General</a></li>
+        <li><a href="#especificos">Objetivos Específicos</a></li>
+        <li><a href="#autores">Autores</a></li>
+        <li><a href="#foro">Foro</a></li>
+        <li><a href="#recursos">Recursos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+    <!-- HERO -->
+    <section id="inicio" class="hero" aria-label="Sección de bienvenida">
+      <div class="hero-text">
+        <h1>Foro de Salud Mental</h1>
+        <h2>Un espacio anónimo y seguro para compartir</h2>
+        <p>Este foro ha sido creado para ofrecer un lugar de apoyo mutuo, donde las personas puedan expresar sus pensamientos, experiencias y emociones sin miedo a ser juzgadas.</p>
+        <a href="#foro" class="btn" aria-label="Ir al foro">Entrar al Foro</a>
+      </div>
+    </section>
+
+    <!-- OBJETIVO GENERAL -->
+    <section id="objetivo">
+      <h2>Objetivo General</h2>
+      <p>Brindar un espacio virtual de interacción y apoyo donde las personas puedan compartir experiencias relacionadas con la depresión, la ansiedad y otros retos emocionales, fomentando el bienestar y la empatía.</p>
+    </section>
+
+    <!-- OBJETIVOS ESPECÍFICOS -->
+    <section id="especificos">
+      <h2>Objetivos Específicos</h2>
+      <ul>
+        <li>Promover un espacio de escucha activa y respeto mutuo.</li>
+        <li>Facilitar el intercambio de experiencias y estrategias de afrontamiento.</li>
+        <li>Conectar a las personas con recursos de apoyo psicológico y comunitario.</li>
+        <li>Contribuir a reducir el estigma en torno a la salud mental.</li>
+      </ul>
+    </section>
+
+    <!-- AUTORES -->
+    <section id="autores">
+      <h2>Autores</h2>
+      <p>Este proyecto ha sido desarrollado por un equipo de cuatro estudiantes con el objetivo de crear un espacio digital de apoyo y concientización sobre la salud mental.</p>
+      <div class="autores-lista">
+        <div class="autor-card">Andres Contreras</div>
+        <div class="autor-card">Leonard Prada</div>
+        <div class="autor-card">Joseph Hernandez</div>
+        <div class="autor-card">Luis Chaparro</div>
+      </div>
+    </section>
+
+
+<!-- RECURSOS DE APOYO -->
+<section id="recursos" class="recursos">
+  <h2>Recursos de Apoyo</h2>
+  <p>Si necesitas ayuda profesional o atención inmediata, puedes comunicarte con las siguientes líneas y servicios:</p>
+  <ul>
+    <li><strong>Línea de Emergencia:</strong> 123</li>
+    <li><strong>Línea Nacional de Salud Mental:</strong> 01 8000 123 456</li>
+    <li><strong>Línea de la Vida:</strong> 01 8000 111 511</li>
+    <li><strong>Chat en Línea:</strong> disponible en <a href="https://www.minsalud.gov.co" target="_blank" rel="noopener">Ministerio de Salud</a></li>
+  </ul>
+  <a href="#foro" class="btn" aria-label="Ir al foro">Ir al Foro</a>
+</section>
+
+<!-- MENSAJES DEL FORO -->
+<section id="mensajes-foro" class="mensajes-foro">
+  <h2>Mensajes Anónimos</h2>
+  <div class="grid-mensajes">
+    <article class="mensaje">
+      <p>“Hoy me sentí escuchado en este foro. Gracias a todos los que respondieron.”<br><strong>– Anónimo</strong></p>
+    </article>
+    <article class="mensaje">
+      <p>“Es la primera vez que comparto mis pensamientos y me siento acompañado.”<br><strong>– Anónimo</strong></p>
+    </article>
+    <article class="mensaje">
+      <p>“Gracias por crear este espacio, hablar me ha ayudado mucho.”<br><strong>– Anónimo</strong></p>
+    </article>
   </div>
-
-  <input type="checkbox" id="menu-toggle" />
-  <label for="menu-toggle" class="menu-icon">&#9776;</label>
-
-  <!-- Este NAV debe estar justo después del checkbox para que el selector CSS funcione -->
-  <nav aria-label="Menú principal">
-    <ul class="menu">
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#quienes-somos">¿Quiénes somos?</a></li>
-      <li><a href="#productos">Productos</a></li>
-      <li><a href="#promociones">Promociones</a></li>
-      <li><a href="#testimonios">Testimonios</a></li>
-      <li><a href="#faq">FAQ</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-  </nav>
-</header>
-    <!-- parte a arergelar -->
-
-
-
-
-
-<!-- CONTENIDO PRINCIPAL -->
-<main>
-<!-- HERO -->
-<section id="inicio" class="hero" aria-label="Sección de bienvenida">
-    <div class="hero-text">
-        <h1>Petunia - Detalles que cuentan historias</h1>
-        <h2>Cada regalo, un recuerdo imborrable</h2>
-        <p>Transformamos momentos cotidianos en experiencias inolvidables. Encuentra ese detalle que dice más que mil palabras.</p>
-        <a href="#productos" class="btn" aria-label="Explorar catálogo de productos">Descubre nuestros regalos</a>
-    </div>
 </section>
 
-
-
-<section id="quienes-somos">
-  <h2>¿Quiénes somos?</h2>
-  <p>Somos Petunia, una tienda de regalos dedicada a ofrecer detalles inolvidables para cada ocasión especial...</p>
-</section>
-
-
-        <!-- PRODUCTOS -->
-        <section id="productos" class="productos">
-            <h2>Nuestros Productos</h2>
-            <div class="grid-productos">
-                <article class="card">
-                    <img src="img/productos/navidad.jpg" alt="Caja de regalo navideña con moño rojo" loading="lazy">
-                    <h3>Navidad</h3>
-                    <p>Desde <strong>$35.000</strong></p>
-                </article>
-                <article class="card">
-                    <img src="img/productos/madres.jpg" alt="Regalo para el Día de la Madre con flores" loading="lazy">
-                    <h3>Día de la Madre</h3>
-                    <p>Desde <strong>$40.000</strong></p>
-                </article>
-                <article class="card">
-                    <img src="img/productos/padres.jpg" alt="Caja de regalo para el Día del Padre con corbata" loading="lazy">
-                    <h3>Día del Padre</h3>
-                    <p>Desde <strong>$38.000</strong></p>
-                </article>
-                <article class="card">
-                    <img src="img/productos/cumple.jpg" alt="Regalo de cumpleaños con globos y pastel" loading="lazy">
-                    <h3>Cumpleaños</h3>
-                    <p>Desde <strong>$30.000</strong></p>
-                </article>
-            </div>
-        </section>
-
-
-<!-- PROMOCIONES -->
-<section id="promociones" class="promociones">
-    <h2>Promociones Especiales</h2>
-    <p>¡Prepara el regalo perfecto para esta temporada! No te pierdas nuestras ofertas limitadas.</p>
-    <div id="contador" aria-live="polite" class="contador"></div>
-    <a href="#contacto" class="btn" aria-label="Ir a la sección de contacto">Contáctanos</a>
-</section>
-
-<!-- TESTIMONIOS -->
-<section id="testimonios" class="testimonios">
-    <h2>Lo que dicen nuestros clientes</h2>
-    <div class="grid-testimonios">
-        <article class="testimonio">
-            <p>“★★★★★ Muy buen servicio, llegó justo a tiempo y el empaque hermoso.”<br><strong>– María C.</strong></p>
-        </article>
-        <article class="testimonio">
-            <p>“★★★★★ Me encantó el detalle para mi mamá. ¡Gracias Petunia!”<br><strong>– Andrés G.</strong></p>
-        </article>
-    </div>
-</section>
-
-        </section>
 <!-- FAQ -->
 <section id="faq" class="faq">
     <h2>Preguntas Frecuentes</h2>
 
     <details>
-        <summary>¿Hacen envíos a todo el país?</summary>
-        <p>Sí, realizamos envíos a nivel nacional con empresas aliadas de confianza.</p>
+        <summary>¿Puedo participar de forma anónima?</summary>
+        <p>Sí. Puedes compartir tus experiencias y mensajes sin necesidad de mostrar tu identidad.</p>
     </details>
 
     <details>
-        <summary>¿Qué métodos de pago aceptan?</summary>
-        <p>Aceptamos transferencias bancarias, Nequi, Daviplata y pagos contra entrega en zonas seleccionadas.</p>
+        <summary>¿El foro es gratuito?</summary>
+        <p>Totalmente. El acceso y la participación en nuestra comunidad son 100% gratuitos.</p>
     </details>
 
     <details>
-        <summary>¿Cuánto tarda en llegar un pedido?</summary>
-        <p>Los pedidos llegan entre 1 y 3 días hábiles, dependiendo de la ubicación y disponibilidad del producto.</p>
+        <summary>¿Hay moderadores en el foro?</summary>
+        <p>Sí. Contamos con moderadores que aseguran un espacio seguro, respetuoso y libre de juicios.</p>
     </details>
 
     <details>
-        <summary>¿Puedo personalizar un regalo?</summary>
-        <p>¡Claro! Personalizamos productos con nombres, mensajes o temáticas especiales. Contáctanos para más detalles.</p>
+        <summary>¿Puedo contactar a un profesional?</summary>
+        <p>No brindamos terapia directa, pero sí compartimos recursos, líneas de ayuda y enlaces oficiales a instituciones de apoyo psicológico.</p>
     </details>
 
     <details>
-        <summary>¿Tienen tienda física?</summary>
-        <p>Sí, contamos con una tienda física ubicada en Bogotá. Puedes visitarnos para ver nuestros productos en persona, hacer pedidos directamente o recoger tus compras realizadas en línea.</p>
+        <summary>¿El contenido que comparto es privado?</summary>
+        <p>Respetamos la privacidad de cada persona. Ningún dato personal se comparte fuera de la comunidad.</p>
     </details>
 </section>
+
 <!-- CONTACTO -->
 <section id="contacto" class="contacto">
-    <h2>¡Hablemos!</h2>
-    <p>¿Tienes preguntas, deseas hacer un pedido personalizado o simplemente saludarnos? Contáctanos por cualquiera de nuestras redes sociales:</p>
+    <h2>Conversemos</h2>
+    <p>Si necesitas orientación adicional o quieres comunicarte directamente, aquí tienes algunos canales de apoyo y contacto:</p>
 
     <div class="info-contacto">
         <p>
-            <strong>📱 WhatsApp:</strong> 
-            <a href="https://wa.me/573004380924" target="_blank" rel="noopener noreferrer" aria-label="Escríbenos por WhatsApp al número 300 438 0924">
-                300 438 0924
-            </a>
+            <strong>📱 Línea Nacional de Atención:</strong> 
+            <a href="tel:192" aria-label="Llamar a la línea nacional 192">192</a> (salud mental, emergencias)
         </p>
         <p>
-            <strong>🎵 TikTok:</strong> 
-            <a href="https://www.tiktok.com/@petuniatiendaderegalos" target="_blank" rel="noopener noreferrer" aria-label="Visita nuestro perfil de TikTok">
-                @petuniatiendaderegalos
-            </a>
+            <strong>📞 Línea de apoyo emocional:</strong> 
+            <a href="tel:106" aria-label="Llamar a la línea 106">106</a> (disponible 24/7 en muchas ciudades)
         </p>
         <p>
-            <strong>📘 Facebook:</strong> 
-            <a href="https://www.facebook.com/petunia.detalles" target="_blank" rel="noopener noreferrer" aria-label="Visítanos en Facebook">
-                Petunia Detalles
+            <strong>🌐 Correo del foro:</strong> 
+            <a href="mailto:contacto@forosalud.org" aria-label="Escribir un correo a contacto@forosalud.org">
+                contacto@forosalud.org
             </a>
         </p>
     </div>
 
-    <a href="https://wa.me/573004380924" 
-       target="_blank" 
-       rel="noopener noreferrer" 
-       class="btn whatsapp" 
-       aria-label="Abrir chat de WhatsApp con Petunia Tienda de Regalos">
-        💬 Escríbenos por WhatsApp
+    <a href="mailto:contacto@forosalud.org" 
+       class="btn"
+       aria-label="Enviar correo a contacto@forosalud.org">
+        📩 Escríbenos un correo
     </a>
 </section>
 
-
-
-
-
-<!-- UBICACIÓN -->
-<section id="ubicacion" class="ubicacion">
-    <h2>¿Dónde estamos?</h2>
-    <p>Visítanos en nuestra tienda física en <strong>Santandercito, San Antonio del Tequendama, Cundinamarca</strong>. ¡Estaremos encantados de recibirte!</p>
-
-    <div class="mapa">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.065506030798!2d-74.3439793250739!3d4.595449995427441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3fba2fdc04e6f3%3A0x60f144b321d7de37!2sCra.%203%20%234a-43%2C%20San%20Antonio%20Del%20Tequendama%2C%20Cundinamarca!5e0!3m2!1ses!2sco!4v1722359041223!5m2!1ses!2sco"
-            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade" title="Ubicación de Petunia">
-        </iframe>
-    </div>
-</section>
-
-
-
-    </main>
-
-<footer>
-    <div class="footer-info">
-        Tienda física en <strong>Santandercito, Cundinamarca</strong> | Cra. 3 #4a-43, San Antonio del Tequendama<br>
-        Contáctanos: <a href="https://wa.me/573004380924" target="_blank" aria-label="Chatear por WhatsApp con Petunia">+57 300 438 0924</a>
-    </div>
-    <div class="footer-copy">
-        &copy; 2025 <strong>Petunia</strong> - Todos los derechos reservados.
-    </div>
-</footer>
-
-
-
-    <!-- CONTADOR REGRESIVO -->
-    <script>
-        const contador = document.getElementById("contador");
-        const fechaObjetivo = new Date("2025-12-01T00:00:00").getTime();
-
-        setInterval(() => {
-            const ahora = new Date().getTime();
-            const diferencia = fechaObjetivo - ahora;
-
-            if (diferencia <= 0) {
-                contador.innerHTML = "¡La promoción ha comenzado!";
-                return;
-            }
-
-            const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
-            const horas = Math.floor((diferencia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutos = Math.floor((diferencia % (1000 * 60 * 60)) / (1000 * 60));
-            const segundos = Math.floor((diferencia % (1000 * 60)) / 1000);
-
-            contador.innerHTML = `Faltan ${dias}d ${horas}h ${minutos}m ${segundos}s para la próxima promoción`;
-        }, 1000);
-
-    </script>
-    <a href="#promociones" class="cta-flotante" aria-label="Ir a promociones">
-  ¡Revisa promociones!
-</a>
-
-    <a href="https://wa.me/573004380924" class="whatsapp-fijo" target="_blank" aria-label="Chat en WhatsApp">
-  <img src="img/whatsapp-icon.png" alt="WhatsApp" width="50">
-<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="50">
-
-</a>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p> Estás a tiempo de hablar, compartir y buscar apoyo. No estás solo.</p>
+  </footer>
+</body>
+</html>
 
 
 </body>
